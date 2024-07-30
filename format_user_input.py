@@ -1,10 +1,10 @@
 ## How to format user data
-""" name = input("What's your name?")
+name = input("What's your name?")
 if "," in name:
     last, first = name.split(",")
     name = f"{first} {last}"
 
-print(f"Hello {name}") """
+print(f"Hello {name}") 
     
     
     #Foramt user data with matches functionality 
