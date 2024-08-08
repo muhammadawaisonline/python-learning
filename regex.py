@@ -1,3 +1,4 @@
+     #Getting user inour and trying to validate it.
 """ email = input("What's your email? ").strip()
 
 if "@" in email and "." in email:
@@ -5,6 +6,8 @@ if "@" in email and "." in email:
 
 else:
     print("Invalid") """
+   
+   #making more precise our condition
 
 """ email = input("What's your email?").strip()
 
@@ -14,7 +17,7 @@ if (username) and ("." in domain):
 else:
     print("Invalid")  """   
 
-
+          #using end.switch()
 """ email = input("What's your email?").strip()
 
 username, domain = email.split("@")
@@ -24,8 +27,9 @@ if username and domain.endswith(".com"):
 else:
     
     print(f"{email} is Invalid") """
+     #Using re library
 
-import re
+""" import re
 
 email = input("What's your email?").strip()
 
@@ -33,5 +37,8 @@ if re.search("@", email):
     username, domain = email.split("@")
     print(username)
 else:
-    print(f"{email}: Invalid email address")
+    print(f"{email}: Invalid email address") """
+
+      #using re patterns to match user input
+
 
