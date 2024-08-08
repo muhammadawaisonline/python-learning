@@ -51,9 +51,9 @@ else:
     print("Invalid") """
 
     #for re library using (".+") combination
-import re
+""" import re
 
-email = input("What's your name?").strip()
+email = input("What's your name?").strip() """
      #.+ combination
 
 """ if re.search(".+@.+", email):
@@ -66,9 +66,23 @@ else:
 else:
     print("Invalid") """
     #"\.edu" combination
-if re.search(r".+@.+\.edu", email):
+""" if re.search(r".+@.+\.edu", email):
+    print(email)
+else:
+    print("Invalid") """
+
+  #To REmove start and user input spaces, we will use "^$"
+
+import re
+
+email = input("What's your email?").strip()
+
+if re.search(r"^.+@.+\.edu$", email):
     print(email)
 else:
     print("Invalid")
+
+
+
 
 
