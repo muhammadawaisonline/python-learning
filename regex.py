@@ -73,19 +73,36 @@ else:
 
   #To REmove start and user input spaces, we will use "^$"
 
-import re
+""" import re
 
-email = input("What's your email?").strip().lower()
+email = input("What's your email?").strip().lower() """
 
 """ if re.search(r"^.+@.+\.edu$", email): """
+                   #Or
 """ if re.search(r"^..*@..*'\.'edu$", email): """
 
 """ if re.search(r"^[^@]@[^@]'\.'edu$", email): """
 """ if re.search(r"^[a-zA-Z0-9_]+@[azA-Z0-9_]\.edu$", email): """
 """ if re.search(r"^\w+@\W\.(com|edu|hotmail|gov|net|org)$", email): """
    #How to remove white space
-if re.search(r"^(\w\S)+@\W+\.edu$", email):
+""" if re.search(r"^(\w\S)+@\W+\.edu$", email):
     print(email)
+else:
+    print("Invalid") """
+
+
+    #Flag
+import re
+
+email = input("What's your email?").strip()
+""" if re.search(r"^\w+@\w\.edu$", email, re.IGNORECASE): """
+      #for mian@math.gcuf.edu
+""" if re.search(r"^\w+@\w\.\w\.edu$", email, re.IGNORECASE): """
+      #for optional subdomain
+""" if re.search(r"^\w+@(\w\.)?\w\.edu$", email, re.IGNORECASE): """
+""" if re.search(r"^(\w\.)+@(\w\.)?\w\.edu$", email, re.IGNORECASE): """
+if re.search(r"^[a-zA-Z0-9_\.]+@(\w\.)?\w\.edu$", email, re.IGNORECASE):
+    print (email)
 else:
     print("Invalid")
 
