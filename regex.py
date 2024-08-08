@@ -39,6 +39,18 @@ if re.search("@", email):
 else:
     print(f"{email}: Invalid email address") """
 
-      #using re patterns to match user input
+      #using re patterns (".*" combination) to match user input
+""" import re
+
+email = input("What's your email?").strip()
+
+if re.search(".*@.*", email):
+    username, domain = email.split("@")
+    print(email)
+else:
+    print("Invalid") """
+
+    #for re library using (".+") combination
+
 
 
