@@ -51,6 +51,24 @@ else:
     print("Invalid") """
 
     #for re library using (".+") combination
+import re
 
+email = input("What's your name?").strip()
+     #.+ combination
+
+""" if re.search(".+@.+", email):
+    print(email)
+else:
+    print("Invalid") """
+   #.edu combination
+""" if re.search(".+@.+.edu", email):
+    print(email)
+else:
+    print("Invalid") """
+    #"\.edu" combination
+if re.search(r".+@.+\.edu", email):
+    print(email)
+else:
+    print("Invalid")
 
 
