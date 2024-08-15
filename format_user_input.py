@@ -9,16 +9,16 @@ print(f"Hello {name}")
 
     #Foramt user data with matches functionality 
 
-""" import re
+import re
 
 name = input("What's your nsme?").strip()
 
 matches = re.search(r"^(.+), *(.+)$", name)
 if matches:
-   
+
     name = matches.group(2) + " " + matches.group(1)
-   
-print(f"Hello {name}") """
+
+    print(f"Hello {name}") 
 
     ### user format with single variable
 
