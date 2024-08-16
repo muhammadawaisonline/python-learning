@@ -22,7 +22,7 @@ print(f"Hello {name}")
 
     ### user format with single variable
 
-import re
+""" import re
 
 name = input("What's your nsme?").strip()
 
@@ -31,10 +31,10 @@ if matches:
 
     last, first = matches.group(2) 
     name = f"{first} {last}"   
-print(f"Hello {name}")
+print(f"Hello {name}") """
 
    ### Two Variable
-""" import re
+import re
 
 name = input("What's your nsme?").strip()
 
@@ -44,7 +44,7 @@ if matches:
     first = matches.group(2)  
     name = f"{first} {last}"
 print(f"Hello {name}")
- """
+
 
 
 
