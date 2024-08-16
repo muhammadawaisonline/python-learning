@@ -9,20 +9,20 @@ print(f"Hello {name}")
 
     #Foramt user data with matches functionality 
 
-import re
+# import re
 
-name = input("What's your nsme?").strip()
+# name = input("What's your nsme?").strip()
 
-matches = re.search(r"^(.+), *(.+)$", name)
-if matches:
+# matches = re.search(r"^(.+), *(.+)$", name)
+# if matches:
 
-    name = matches.group(2) + " " + matches.group(1)
+#     name = matches.group(2) + " " + matches.group(1)
 
-    print(f"Hello {name}") 
+#     print(f"Hello {name}") 
 
     ### user format with single variable
 
-""" import re
+import re
 
 name = input("What's your nsme?").strip()
 
@@ -31,7 +31,7 @@ if matches:
 
     last, first = matches.group(2) 
     name = f"{first} {last}"   
-print(f"Hello {name}") """
+print(f"Hello {name}")
 
    ### Two Variable
 """ import re
