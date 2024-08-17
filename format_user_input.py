@@ -49,7 +49,7 @@ print(f"Hello {name}")
 
 
    ## Usig Warlus Operator for matches
-import re
+""" import re
 
 name = input("What's your name?").strip()
 
@@ -59,12 +59,12 @@ if matches:= re.search(r"^(.+), *(.+)$", name):
    
 print(f"Hello {name}")
 
-matches = re.search(r"^(.+), *(.+)$", name)
+matches = re.search(r"^(.+), *(.+)$", name) """
 
 
 
-   ### How to collect username fron twitter of users
-""" url = input("URL: ").strip()
+   ### How to collect username from twitter of users
+url = input("URL: ").strip()
 
 username = url.replace("https://twitter.com/", "")
-print(f"Username: {username}") """
+print(f"Username: {username}")
