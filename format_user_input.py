@@ -34,7 +34,7 @@ if matches:
 print(f"Hello {name}") """
 
    ### Two Variable
-import re
+""" import re
 
 name = input("What's your nsme?").strip()
 
@@ -44,22 +44,20 @@ if matches:
     first = matches.group(2)  
     name = f"{first} {last}"
 print(f"Hello {name}")
-
+ """
 
 
 
    ## Usig Warlus Operator for matches
-""" import re
+import re
 
 name = input("What's your nsme?").strip()
-
-
 
 if matches:= re.search(r"^(.+), *(.+)$", name):
    
     name = matches.group(2) + " " + matches.group(1)
    
-print(f"Hello {name}") """
+print(f"Hello {name}")
 
 """ matches = re.search(r"^(.+), *(.+)$", name) """
 
