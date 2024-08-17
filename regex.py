@@ -9,12 +9,22 @@ else:
    
    #making more precise our condition
 
-email = input("What's your email?").strip()
+""" email = input("What's your email?").strip()
 
 username, domain = email.split("@")
 if (username) and ("." in domain):
     print(username)
 else:
-    print("Invalid")    
+    print("Invalid") """    
 
-          
+          #using end.switch()
+email = input("What's your email?").strip()
+
+username, domain = email.split("@")
+
+if username and domain.endswith(".com"):
+    print(username)
+else:
+    
+    print(f"{email} is Invalid")
+     
