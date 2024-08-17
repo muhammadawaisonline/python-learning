@@ -51,7 +51,7 @@ print(f"Hello {name}")
    ## Usig Warlus Operator for matches
 import re
 
-name = input("What's your nsme?").strip()
+name = input("What's your name?").strip()
 
 if matches:= re.search(r"^(.+), *(.+)$", name):
    
@@ -59,7 +59,7 @@ if matches:= re.search(r"^(.+), *(.+)$", name):
    
 print(f"Hello {name}")
 
-""" matches = re.search(r"^(.+), *(.+)$", name) """
+matches = re.search(r"^(.+), *(.+)$", name)
 
 
 
