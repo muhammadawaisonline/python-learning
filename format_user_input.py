@@ -66,4 +66,7 @@ print(f"Hello {name}") """
 
 
    ### How to collect username fron twitter of users
-   
+""" url = input("URL: ").strip()
+
+username = url.replace("https://twitter.com/", "")
+print(f"Username: {username}") """
